@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodify - Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="authScreen">
+      <div id="loginBox">
+        <h2>Login</h2>
+        <input id="username" type="text" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMsg" style="color: red;"></p>
+        <button onclick="showSignupForm()">Create Account</button>
+      </div>
+
+      <div id="signupBox">
+        <h2>Create Account</h2>
+        <input id="newUsername" type="text" placeholder="New Username">
+        <input id="newPassword" type="password" placeholder="New Password">
+        <button onclick="signup()">Sign Up</button>
+        <button onclick="showLoginForm()">Back to Login</button>
+      </div>
+    </div>
+
+    <div id="app">
+      <h2>Welcome to Moodify 🌸</h2>
+      <select id="mood">
+        <option value="happy">Happy 😊</option>
+        <option value="sad">Sad 😢</option>
+        <option value="angry">Angry 😡</option>
+        <option value="neutral">Neutral 😐</option>
+      </select>
+      <textarea id="note" placeholder="Write your thoughts..."></textarea>
+      <button onclick="saveMood()">Save Mood</button>
+      <button onclick="clearMoods()">Clear All Moods</button>
+
+      <ul id="moodList"></ul>
+      <canvas id="moodChart" width="400" height="200"></canvas>
+      <div id="quoteBox" class="quote-display"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
