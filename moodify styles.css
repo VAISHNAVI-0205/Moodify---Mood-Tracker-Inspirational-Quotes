@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  input, select, button, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  #moodList li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .quote-display {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  #signupBox { display: none; }
+  #app { display: none; }
+  
